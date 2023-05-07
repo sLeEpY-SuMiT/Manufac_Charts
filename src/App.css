@@ -1,0 +1,30 @@
+body{
+  overflow-x: hidden;
+}
+
+.Manufac{
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.mt{
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .Manufac{
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
