@@ -11,8 +11,11 @@ const BarChart = () => {
 
   // fetching both Alcohol and Magnesium data from Winedata set
   DataSet.forEach((Alc) => {
-    AlcoholData.push(Alc.Alcohol)
     MagnesiumData.push(Alc.Magnesium)
+    // This condition will remove repeated data from Alcohol data
+    if(!AlcoholData.includes(Alc.Alcohol)){
+      AlcoholData.push(Alc.Alcohol)
+    } 
   })
 
   // options to pass in option prop of ReactEcharts
